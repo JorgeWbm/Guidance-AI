@@ -1,0 +1,94 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 222 47% 6%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 283 81% 53%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 223 47% 14%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 323 96% 65%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 223 47% 15%;
+    --input: 223 47% 15%;
+    --ring: 224.3 76.3% 48%;
+
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter;
+    background-image: radial-gradient(circle at 50% 50%, rgba(79, 172, 254, 0.1) 0%, rgba(15, 23, 42, 0) 100%);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-orbitron tracking-wider;
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px rgba(157, 80, 255, 0.7), 
+                 0 0 20px rgba(157, 80, 255, 0.5);
+  }
+
+  .border-glow {
+    box-shadow: 0 0 5px rgba(79, 172, 254, 0.7), 
+                0 0 10px rgba(79, 172, 254, 0.4);
+  }
+
+  .gradient-text {
+    @apply text-transparent bg-clip-text bg-neon-gradient;
+  }
+}
+
+.quiz-container {
+  @apply w-full max-w-4xl mx-auto p-6 md:p-8;
+}
+
+.quiz-card {
+  @apply relative border border-border/40 bg-card/80 backdrop-blur-sm rounded-xl shadow-lg p-6 md:p-8;
+  box-shadow: 0 0 20px rgba(79, 172, 254, 0.1), 
+              0 0 40px rgba(157, 80, 255, 0.1);
+}
+
+.neon-button {
+  @apply relative px-6 py-2.5 rounded-md font-medium transition-all duration-300 hover:scale-105;
+  background: linear-gradient(90deg, rgba(79, 172, 254, 0.2), rgba(157, 80, 255, 0.2), rgba(255, 90, 205, 0.2));
+  border: 1px solid rgba(157, 80, 255, 0.4);
+  box-shadow: 0 0 10px rgba(157, 80, 255, 0.4);
+}
+
+.neon-button:hover {
+  box-shadow: 0 0 15px rgba(157, 80, 255, 0.7), 
+              0 0 30px rgba(157, 80, 255, 0.4);
+}
