@@ -13,7 +13,7 @@ export default function Header({ className }: HeaderProps) {
           Guidance AI
         </h1>
         <div className="mt-2 text-muted-foreground text-sm md:text-base">
-          Find your ideal career path in tech development
+          Encontre sua carreira ideal no desenvolvimento tecnologico
         </div>
       </div>
     </header>

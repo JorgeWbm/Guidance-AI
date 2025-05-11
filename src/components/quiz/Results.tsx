@@ -50,7 +50,7 @@ export default function Results() {
             {IconComponent && <IconComponent className={`w-8 h-8 ${colorClass}`} />}
           </div>
           <h2 className="text-3xl font-bold mb-2 gradient-text">
-            You're a{path.title.startsWith('F') ? 'n' : ''} {path.title}!
+            Você é {path.title.startsWith('F') ? 'n' : ''} {path.title}!
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
             {path.description}
@@ -61,7 +61,7 @@ export default function Results() {
           className="mb-10"
           variants={itemVariants}
         >
-          <h3 className="text-xl font-semibold mb-6 gradient-text">Your Career Roadmap</h3>
+          <h3 className="text-xl font-semibold mb-6 gradient-text">Aqui está o seu RoadMap</h3>
           <div className="space-y-8">
             {path.sections.map((section, sectionIndex) => (
               <motion.div 
@@ -111,7 +111,7 @@ export default function Results() {
             className="neon-button"
             size="lg"
           >
-            <ArrowLeft className="mr-2 w-4 h-4" /> Retake Quiz
+            <ArrowLeft className="mr-2 w-4 h-4" /> Refaça o Quiz
           </Button>
         </motion.div>
       </motion.div>
@@ -131,11 +131,11 @@ function getIconByName(name: string) {
 
 function getPriorityStyles(priority: string) {
   switch(priority) {
-    case 'core':
+    case 'Essencial':
       return 'border-blue-500/30 bg-blue-500/10';
-    case 'important':
+    case 'Importante':
       return 'border-purple-500/30 bg-purple-500/10';
-    case 'advanced':
+    case 'Avançado':
       return 'border-pink-500/30 bg-pink-500/10';
     default:
       return 'border-border/40 bg-card/30';
@@ -144,11 +144,11 @@ function getPriorityStyles(priority: string) {
 
 function getPriorityBgStyles(priority: string) {
   switch(priority) {
-    case 'core':
+    case 'Essencial':
       return 'bg-blue-500/20';
-    case 'important':
+    case 'Importante':
       return 'bg-purple-500/20';
-    case 'advanced':
+    case 'Avançado':
       return 'bg-pink-500/20';
     default:
       return 'bg-muted/40';
@@ -157,11 +157,11 @@ function getPriorityBgStyles(priority: string) {
 
 function getPriorityTextStyles(priority: string) {
   switch(priority) {
-    case 'core':
+    case 'Essencial':
       return 'text-blue-400';
-    case 'important':
+    case 'Importante':
       return 'text-purple-400';
-    case 'advanced':
+    case 'Avançado':
       return 'text-pink-400';
     default:
       return 'text-muted-foreground';
@@ -170,11 +170,11 @@ function getPriorityTextStyles(priority: string) {
 
 function getPriorityTagStyles(priority: string) {
   switch(priority) {
-    case 'core':
+    case 'Essencial':
       return 'bg-blue-500/20 text-blue-300';
-    case 'important':
+    case 'Importante':
       return 'bg-purple-500/20 text-purple-300';
-    case 'advanced':
+    case 'Avançado':
       return 'bg-pink-500/20 text-pink-300';
     default:
       return 'bg-muted/40 text-muted-foreground';

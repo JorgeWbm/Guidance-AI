@@ -18,7 +18,7 @@ const Index = () => {
           <Quiz />
         </main>
         <footer className="py-4 px-6 text-center text-xs text-muted-foreground">
-          <p>© 2025 Guidance AI • Career Guidance For Tech Students</p>
+          <p>© 2025 Guidance AI • Orientação de carreira para estudantes de tecnologia</p>
         </footer>
       </motion.div>
     </QuizProvider>

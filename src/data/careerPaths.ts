@@ -2,7 +2,7 @@
 export interface SkillItem {
   name: string;
   description: string;
-  priority: 'core' | 'important' | 'advanced';
+  priority: 'Essencial' | 'Importante' | 'Avançado';
 }
 
 export interface RoadmapSection {
@@ -22,133 +22,133 @@ export interface CareerPath {
 export const careerPaths: Record<string, CareerPath> = {
   'frontend': {
     id: 'frontend',
-    title: 'Front-End Developer',
-    description: 'As a Front-End Developer, you\'ll specialize in creating beautiful, interactive user interfaces. You\'ll work closely with designers to bring visual concepts to life and ensure applications are responsive and accessible across all devices. Your focus will be on delivering exceptional user experiences through clean, efficient code.',
+    title: 'Desenvolvedor Front-End',
+    description: 'Como Desenvolvedor Front-End, você se especializará na criação de interfaces de usuário atraentes e interativas. Você trabalhará em estreita colaboração com designers para dar vida a conceitos visuais e garantir que os aplicativos sejam responsivos e acessíveis em todos os dispositivos. Seu foco será proporcionar experiências excepcionais ao usuário por meio de um código limpo e eficiente.',
     icon: 'monitor',
     color: 'neon-blue',
     sections: [
       {
-        title: 'Core Technologies',
+        title: 'Tecnologias principais',
         items: [
           {
-            name: 'HTML5',
-            description: 'Semantic markup, accessibility, and structure',
-            priority: 'core'
+            name: 'HTML 5',
+            description: 'Marcação semântica, acessibilidade e estrutura',
+            priority: 'Essencial'
           },
           {
-            name: 'CSS3',
-            description: 'Styling, layouts, animations, and responsive design',
-            priority: 'core'
+            name: 'CSS 3',
+            description: 'Estilo, layouts, animações e design responsivo',
+            priority: 'Essencial'
           },
           {
             name: 'JavaScript',
-            description: 'DOM manipulation, events, and modern ES6+ features',
-            priority: 'core'
+            description: 'Manipulação de DOM, eventos e recursos modernos do ES6+',
+            priority: 'Essencial'
           },
           {
-            name: 'Responsive Design',
-            description: 'Creating interfaces that work across all devices and screen sizes',
-            priority: 'core'
+            name: 'Design Responsivo',
+            description: 'Criação de interfaces que funcionam em todos os dispositivos e tamanhos de tela',
+            priority: 'Essencial'
           }
         ]
       },
       {
-        title: 'Frameworks & Libraries',
+        title: 'Frameworks & Bibliotecas',
         items: [
           {
             name: 'React',
             description: 'Component-based UI development with hooks and state management',
-            priority: 'core'
+            priority: 'Essencial'
           },
           {
             name: 'CSS Frameworks',
-            description: 'Tailwind CSS, Bootstrap, or Material UI',
-            priority: 'important'
+            description: 'Tailwind CSS, Tailwind CSS, Bootstrap ou Material UI, or Material UI',
+            priority: 'Importante'
           },
           {
-            name: 'State Management',
-            description: 'Redux, Context API, or Zustand',
-            priority: 'important'
+            name: 'Gestão Estadual',
+            description: 'Redux, API de contexto ou Zustand',
+            priority: 'Importante'
           },
           {
             name: 'TypeScript',
-            description: 'Type-safe JavaScript development',
-            priority: 'important'
+            description: 'Desenvolvimento JavaScript com Type-safe',
+            priority: 'Importante'
           }
         ]
       },
       {
-        title: 'Design & User Experience',
+        title: 'Design & Experiência do usuário',
         items: [
           {
-            name: 'UI/UX Principles',
-            description: 'Understanding user-centered design and interaction patterns',
-            priority: 'important'
+            name: 'Principios UX/UI',
+            description: 'Compreendendo o design centrado no usuário e os padrões de interação',
+            priority: 'Importante'
           },
           {
-            name: 'Design Tools',
-            description: 'Figma, Adobe XD, or Sketch',
-            priority: 'important'
+            name: 'Ferramentas de Design',
+            description: 'Figma, Adobe XD ou Sketch',
+            priority: 'Importante'
           },
           {
-            name: 'CSS Architecture',
-            description: 'BEM, CSS Modules, or Styled Components',
-            priority: 'important'
+            name: 'Arquitetura CSS',
+            description: 'BEM, Módulos CSS ou Componentes Estilizados',
+            priority: 'Importante'
           },
           {
-            name: 'Animations',
-            description: 'CSS animations, Framer Motion, or GSAP',
-            priority: 'advanced'
+            name: 'Animações',
+            description: 'Animações CSS, Framer Motion ou GSAP',
+            priority: 'Avançado'
           }
         ]
       },
       {
-        title: 'Testing & Tools',
+        title: 'Testes & Ferramentas',
         items: [
           {
-            name: 'Version Control',
-            description: 'Git workflows and collaboration',
-            priority: 'core'
+            name: 'Controle de versão',
+            description: 'Fluxos de trabalho e colaboração do Git',
+            priority: 'Essencial'
           },
           {
-            name: 'Testing',
-            description: 'Jest, React Testing Library, or Cypress',
-            priority: 'important'
+            name: 'Testes',
+            description: 'Jest, React Testing Library ou Cypress',
+            priority: 'Importante'
           },
           {
-            name: 'Performance Optimization',
-            description: 'Lazy loading, code splitting, and bundle optimization',
-            priority: 'advanced'
+            name: 'Otimização de desempenho',
+            description: 'Carregamento lento, divisão de código e otimização de pacotes',
+            priority: 'Avançado'
           },
           {
-            name: 'Browser DevTools',
-            description: 'Debugging, performance profiling, and network analysis',
-            priority: 'core'
+            name: 'Ferramentas de desenvolvimento do navegador',
+            description: 'Depuração, criação de perfil de desempenho e análise de rede',
+            priority: 'Essencial'
           }
         ]
       },
       {
-        title: 'Advanced Skills',
+        title: 'Habilidades Avançadas',
         items: [
           {
-            name: 'Accessibility (a11y)',
-            description: 'Building inclusive interfaces that work for everyone',
-            priority: 'important'
+            name: 'Acessibilidade (a11y)',
+            description: 'Construindo interfaces inclusivas que funcionem para todos',
+            priority: 'Importante'
           },
           {
-            name: 'Progressive Web Apps',
-            description: 'Creating installable web applications with offline support',
-            priority: 'advanced'
+            name: 'Aplicativos Web Progressivos',
+            description: 'Criação de aplicativos web instaláveis ​​com suporte offline',
+            priority: 'Avançado'
           },
           {
-            name: 'Internationalization',
-            description: 'Building applications that support multiple languages',
-            priority: 'advanced'
+            name: 'Internacionalização',
+            description: 'Criação de aplicativos que suportam vários idiomas',
+            priority: 'Avançado'
           },
           {
-            name: 'Web Components',
-            description: 'Creating reusable custom elements',
-            priority: 'advanced'
+            name: 'Componetes Web',
+            description: 'Criação de elementos personalizados reutilizáveis',
+            priority: 'Avançado'
           }
         ]
       }
@@ -156,133 +156,134 @@ export const careerPaths: Record<string, CareerPath> = {
   },
   'backend': {
     id: 'backend',
-    title: 'Back-End Developer',
-    description: 'As a Back-End Developer, you\'ll build the core systems that power applications. You\'ll focus on server logic, databases, security, and performance optimization. Your work happens behind the scenes but is critical to creating reliable, scalable applications that can handle user demands.',
+    title: 'Desenvolvedor Back-End',
+    description: 'Como Desenvolvedor Back-End, você construirá os sistemas centrais que alimentam os aplicativos. Você se concentrará em lógica de servidor, bancos de dados, segurança e otimização de desempenho. Seu trabalho acontece nos bastidores, mas é fundamental para a criação de aplicativos confiáveis ​​e escaláveis ​​que possam atender às demandas dos usuários.',
     icon: 'database',
     color: 'neon-purple',
     sections: [
       {
-        title: 'Core Technologies',
+      
+        title: 'Essencial Tecnologias',
         items: [
           {
-            name: 'Server-Side Languages',
-            description: 'JavaScript (Node.js), Python, Java, or C#',
-            priority: 'core'
+            name: 'Linguagens do lado do servidor',
+            description: 'JavaScript (Node.js), Python, Java ou C#',
+            priority: 'Essencial'
           },
           {
-            name: 'Databases',
-            description: 'SQL (PostgreSQL, MySQL) and NoSQL (MongoDB, Redis)',
-            priority: 'core'
+            name: 'Banco de dados',
+            description: 'SQL (PostgreSQL, MySQL) e NoSQL (MongoDB, Redis)',
+            priority: 'Essencial'
           },
           {
-            name: 'API Development',
-            description: 'RESTful principles, HTTP methods, and status codes',
-            priority: 'core'
+            name: 'Desenvolvimento de APIs',
+            description: 'Princípios RESTful, métodos HTTP e códigos de status',
+            priority: 'Essencial'
           },
           {
-            name: 'Authentication & Authorization',
-            description: 'JWT, OAuth, and security best practices',
-            priority: 'core'
+            name: 'Autenticação e Autorização',
+            description: 'JWT, OAuth e práticas recomendadas de segurança',
+            priority: 'Essencial'
           }
         ]
       },
       {
-        title: 'Frameworks & Libraries',
+        title: 'Estruturas e Bibliotecas',
         items: [
           {
-            name: 'Node.js & Express',
-            description: 'Building APIs and server applications with JavaScript',
-            priority: 'core'
+            name: 'Node.js e Express',
+            description: 'Construindo APIs e aplicativos de servidor com JavaScript',
+            priority: 'Essencial'
           },
           {
             name: 'ORM/ODM',
-            description: 'Sequelize, TypeORM, or Mongoose',
-            priority: 'important'
+            description: 'Sequelize, TypeORM ou Mongoose',
+            priority: 'Importante'
           },
           {
-            name: 'API Documentation',
-            description: 'Swagger/OpenAPI for clear API contracts',
-            priority: 'important'
+            name: 'Documentação da API',
+            description: 'Swagger/OpenAPI para contratos de API claros',
+            priority: 'Importante'
           },
           {
             name: 'GraphQL',
-            description: 'Schema definition and resolvers',
-            priority: 'advanced'
+            description: 'Definição de esquema e resolvedores',
+            priority: 'Avançado'
           }
         ]
       },
       {
-        title: 'DevOps & Infrastructure',
+        title: 'DevOps e Infraestrutura',
         items: [
           {
             name: 'Docker',
-            description: 'Containerizing applications for consistent environments',
-            priority: 'important'
+            description: 'Contêineres de aplicativos para ambientes consistentes',
+            priority: 'Importante'
           },
           {
             name: 'CI/CD',
-            description: 'Automated testing and deployment pipelines',
-            priority: 'important'
+            description: 'Pipelines automatizados de testes e implantação',
+            priority: 'Importante'
           },
           {
-            name: 'Monitoring & Logging',
-            description: 'Error tracking, performance monitoring, and log management',
-            priority: 'important'
+            name: 'Monitoramento e registro',
+            description: 'Rastreamento de erros, monitoramento de desempenho e gerenciamento de logs',
+            priority: 'Importante'
           },
           {
-            name: 'Cloud Services',
-            description: 'AWS, Azure, or Google Cloud Platform',
-            priority: 'important'
+            name: 'Serviços em nuvem',
+            description: 'AWS, Azure ou Google Cloud Platform',
+            priority: 'Importante'
           }
         ]
       },
       {
-        title: 'Database Skills',
+        title: 'Habilidades de banco de dados',
         items: [
           {
-            name: 'Database Design',
-            description: 'Normalization, relationships, and schema optimization',
-            priority: 'core'
+            name: 'banco de dados Design',
+            description: 'Normalização, relacionamentos e otimização de esquemas',
+            priority: 'Importante'
           },
           {
-            name: 'Query Optimization',
-            description: 'Performance tuning and indexing strategies',
-            priority: 'important'
+            name: 'Otimização de consulta',
+            description: 'Estratégias de ajuste de desempenho e indexação',
+            priority: 'Importante'
           },
           {
-            name: 'Data Migrations',
-            description: 'Managing schema changes safely',
-            priority: 'important'
+            name: 'Migrações de dados',
+            description: 'Gerenciando alterações de esquema com segurança',
+            priority: 'Importante'
           },
           {
-            name: 'Caching Strategies',
-            description: 'Redis, in-memory caching, and query result caching',
-            priority: 'advanced'
+            name: 'Estratégias de Cache',
+            description: 'Redis, cache na memória e cache de resultados de consulta',
+            priority: 'Avançado'
           }
         ]
       },
       {
-        title: 'Advanced Skills',
+        title: 'Habilidades Avançadas',
         items: [
           {
-            name: 'Security',
-            description: 'OWASP security practices, input validation, and protection against common attacks',
-            priority: 'important'
+            name: 'Segurança',
+            description: 'Práticas de segurança OWASP, validação de entrada e proteção contra ataques comuns',
+            priority: 'Importante'
           },
           {
-            name: 'Microservices',
-            description: 'Distributed system design patterns',
-            priority: 'advanced'
+            name: 'Microsserviços',
+            description: 'Padrões de projeto de sistemas distribuídos',
+            priority: 'Avançado'
           },
           {
-            name: 'Message Queues',
-            description: 'RabbitMQ, Kafka, or SQS for async processing',
-            priority: 'advanced'
+            name: 'Filas de mensagens',
+            description: 'RabbitMQ, Kafka ou SQS para processamento assíncrono',
+            priority: 'Avançado'
           },
           {
-            name: 'Serverless',
-            description: 'Function-as-a-Service and event-driven architectures',
-            priority: 'advanced'
+            name: 'Sem servidor',
+            description: 'Arquiteturas de função como serviço e orientadas a eventos',
+            priority: 'Avançado'
           }
         ]
       }
@@ -290,133 +291,133 @@ export const careerPaths: Record<string, CareerPath> = {
   },
   'fullstack': {
     id: 'fullstack',
-    title: 'Full-Stack Developer',
-    description: 'As a Full-Stack Developer, you\'ll work across the entire application, from database to user interface. You\'ll have a broad skillset that lets you build complete features and understand how all parts of a system connect. This versatility allows you to tackle diverse challenges and see projects through from start to finish.',
+    title: 'Desenvolvedor Full-Stack',
+    description: 'Como Desenvolvedor Full-Stack, você trabalhará em toda a aplicação, do banco de dados à interface do usuário. Você terá um amplo conjunto de habilidades que lhe permitirá desenvolver recursos completos e entender como todas as partes de um sistema se conectam. Essa versatilidade permite que você enfrente diversos desafios e acompanhe os projetos do início ao fim.',
     icon: 'code',
     color: 'neon-pink',
     sections: [
       {
-        title: 'Front-End Skills',
+        title: 'Habilidades Front-End',
         items: [
           {
             name: 'HTML/CSS/JavaScript',
-            description: 'Core web technologies and responsive design',
-            priority: 'core'
+            description: 'Tecnologias web essenciais e design responsivo',
+            priority: 'Essencial'
           },
           {
             name: 'UI Frameworks',
-            description: 'React, Angular, or Vue',
-            priority: 'core'
+            description: 'React, Angular ou Vue',
+            priority: 'Essencial'
           },
           {
-            name: 'State Management',
-            description: 'Managing application data flow',
-            priority: 'important'
+            name: 'Gestão Estadual',
+            description: 'Gerenciando o fluxo de dados do aplicativo',
+            priority: 'Importante'
           },
           {
-            name: 'Modern CSS',
-            description: 'Flexbox, Grid, and CSS-in-JS',
-            priority: 'important'
+            name: 'CSS moderno',
+            description: 'Flexbox, Grid e CSS-in-JS',
+            priority: 'Importante'
           }
         ]
       },
       {
-        title: 'Back-End Skills',
+        title: 'Habilidades de Back-End',
         items: [
           {
-            name: 'Server-Side Languages',
-            description: 'Node.js, Python, or another language',
-            priority: 'core'
+            name: 'Linguagens do lado do servidor',
+            description: 'Node.js, Python ou outra linguagem',
+            priority: 'Essencial'
           },
           {
             name: 'Database Management',
-            description: 'SQL and/or NoSQL databases',
-            priority: 'core'
+            description: 'Bancos de dados SQL e/ou NoSQL',
+            priority: 'Essencial'
           },
           {
-            name: 'API Development',
-            description: 'RESTful or GraphQL APIs',
-            priority: 'core'
+            name: 'Desenvolvimento de APIs',
+            description: 'APIs RESTful ou GraphQL',
+            priority: 'Essencial'
           },
           {
-            name: 'Authentication',
-            description: 'User management and security',
-            priority: 'important'
+            name: 'Autenticação',
+            description: 'Gerenciamento e segurança de usuários',
+            priority: 'Importante'
           }
         ]
       },
       {
-        title: 'DevOps & Deployment',
+        title: 'DevOps e Implantação',
         items: [
           {
-            name: 'Version Control',
-            description: 'Git workflows and collaboration',
-            priority: 'core'
+            name: 'Controle de versão',
+            description: 'Fluxos de trabalho e colaboração do Git',
+            priority: 'Essencial'
           },
           {
-            name: 'CI/CD Pipelines',
-            description: 'Automated testing and deployment',
-            priority: 'important'
+            name: 'Pipelines de CI/CD',
+            description: 'Teste e implantação automatizados',
+            priority: 'Importante'
           },
           {
-            name: 'Containerization',
-            description: 'Docker and container orchestration',
-            priority: 'important'
+            name: 'Conteinerização',
+            description: 'Orquestração de Docker e contêineres',
+            priority: 'Importante'
           },
           {
-            name: 'Cloud Services',
-            description: 'AWS, Azure, or Google Cloud Platform',
-            priority: 'important'
+            name: 'Serviços em nuvem',
+            description: 'AWS, Azure ou Google Cloud Platform',
+            priority: 'Importante'
           }
         ]
       },
       {
-        title: 'Architecture & Integration',
+        title: 'Arquitetura e Integração',
         items: [
           {
-            name: 'Full-Stack Frameworks',
-            description: 'Next.js, Nuxt.js, or similar integrated solutions',
-            priority: 'important'
+            name: 'Frameworks Full-Stack',
+            description: 'Next.js, Nuxt.js ou soluções integradas semelhantes',
+            priority: 'Importante'
           },
           {
-            name: 'System Design',
-            description: 'Creating scalable, maintainable architecture',
-            priority: 'important'
+            name: 'Projeto do sistema',
+            description: 'Criando arquitetura escalável e sustentável',
+            priority: 'Importante'
           },
           {
-            name: 'Third-Party Integrations',
-            description: 'Working with external APIs and services',
-            priority: 'important'
+            name: 'Integrações de terceiros',
+            description: 'Trabalhando com APIs e serviços externos',
+            priority: 'Importante'
           },
           {
-            name: 'Performance Optimization',
-            description: 'Frontend and backend optimization techniques',
-            priority: 'advanced'
+            name: 'Otimização de desempenho',
+            description: 'Técnicas de otimização de frontend e backend',
+            priority: 'Avançado'
           }
         ]
       },
       {
-        title: 'Professional Skills',
+        title: 'Habilidades Profissionais',
         items: [
           {
-            name: 'Project Management',
-            description: 'Planning, estimation, and coordination',
-            priority: 'important'
+            name: 'Gerenciamento de projetos',
+            description: 'Planejamento, estimativa e coordenação',
+            priority: 'Importante'
           },
           {
-            name: 'Technical Communication',
-            description: 'Explaining complex concepts clearly',
-            priority: 'important'
+            name: 'Comunicação Técnica',
+            description: 'Explicando conceitos complexos claramente',
+            priority: 'Importante'
           },
           {
-            name: 'Problem-Solving',
-            description: 'Debugging across the entire stack',
-            priority: 'core'
+            name: 'Resolução de problemas',
+            description: 'Depuração em toda a pilha',
+            priority: 'Essencial'
           },
           {
-            name: 'Continuous Learning',
-            description: 'Staying current with evolving technologies',
-            priority: 'core'
+            name: 'Aprendizagem Contínua',
+            description: 'Mantendo-se atualizado com as tecnologias em evolução',
+            priority: 'Essencial'
           }
         ]
       }

@@ -41,16 +41,16 @@ export default function Welcome() {
         variants={itemVariants}
       >
         <h1 className="text-3xl sm:text-4xl font-bold mb-6 gradient-text">
-          Find Your Ideal Tech Career Path
+          Encontre a sua carreira ideal em tecnologia
         </h1>
         
         <motion.p 
           className="text-muted-foreground mb-8"
           variants={itemVariants}
         >
-          Not sure if you should focus on front-end, back-end, or full-stack development? 
-          Take this quiz to discover which path aligns best with your interests, 
-          preferences, and natural abilities.
+          Não tem certeza se deve focar em desenvolvimento front-end, back-end ou full-stack?
+          Faça este teste para descobrir qual caminho se alinha melhor com seus interesses,
+          preferências e habilidades naturais.
         </motion.p>
 
         <motion.div 
@@ -65,7 +65,7 @@ export default function Welcome() {
               <h3 className="font-semibold text-neon-blue">Front-End</h3>
             </div>
             <p className="text-sm text-muted-foreground">
-              Create beautiful, interactive user interfaces. Focus on what users see and interact with.
+              Crie interfaces de usuário atraentes e interativas. Concentre-se no que os usuários veem e com o que interagem.
             </p>
           </div>
           
@@ -77,7 +77,7 @@ export default function Welcome() {
               <h3 className="font-semibold text-neon-purple">Back-End</h3>
             </div>
             <p className="text-sm text-muted-foreground">
-              Build the logic and data systems that power applications. Work with databases and server technologies.
+              Crie os sistemas lógicos e de dados que alimentam os aplicativos. Trabalhe com bancos de dados e tecnologias de servidor.
             </p>
           </div>
           
@@ -89,7 +89,7 @@ export default function Welcome() {
               <h3 className="font-semibold text-neon-pink">Full-Stack</h3>
             </div>
             <p className="text-sm text-muted-foreground">
-              Become versatile by mastering both front-end and back-end. Build complete applications from start to finish.
+              Torne-se versátil dominando front-end e back-end. Crie aplicativos completos do início ao fim.
             </p>
           </div>
         </motion.div>
@@ -98,12 +98,12 @@ export default function Welcome() {
           className="mb-6 p-4 rounded-lg bg-muted/20 border border-muted"
           variants={itemVariants}
         >
-          <h4 className="font-semibold mb-2">How it works:</h4>
+          <h4 className="font-semibold mb-2">Como funciona:</h4>
           <ul className="list-disc pl-5 text-sm text-muted-foreground space-y-1">
-            <li>Answer 20 questions about your preferences and interests</li>
-            <li>We'll analyze your answers to determine your ideal path</li>
-            <li>Receive a personalized career roadmap based on your results</li>
-            <li>All questions are designed to gauge your natural tendencies and preferences</li>
+            <li>Responda a 20 perguntas sobre suas preferências e interesses</li>
+            <li>Analisaremos suas respostas para determinar seu caminho ideal</li>
+            <li>Receba um roteiro de carreira personalizado com base nos seus resultados</li>
+            <li>Todas as perguntas são elaboradas para avaliar suas tendências e preferências naturais</li>
           </ul>
         </motion.div>
 
@@ -116,7 +116,7 @@ export default function Welcome() {
             className="neon-button"
             size="lg"
           >
-            Start Quiz <ChevronRight className="ml-2 w-4 h-4" />
+            Começe o Quiz <ChevronRight className="ml-2 w-4 h-4" />
           </Button>
         </motion.div>
       </motion.div>

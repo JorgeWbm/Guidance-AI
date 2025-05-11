@@ -41,10 +41,10 @@ export default function TiebreakQuestion() {
           className="mb-6 p-4 rounded-lg bg-blue-500/10 border border-blue-500/30"
           variants={itemVariants}
         >
-          <h3 className="text-lg font-medium mb-1">We need your help with one final question</h3>
+          <h3 className="text-lg font-medium mb-1">Precisamos da sua ajuda com uma última pergunta</h3>
           <p className="text-muted-foreground text-sm">
-            Your answers show you could excel in multiple areas. 
-            This question will help us determine your ideal path.
+            Suas respostas mostram que você pode se destacar em diversas áreas.
+            Esta pergunta nos ajudará a determinar seu caminho ideal.
           </p>
         </motion.div>
 

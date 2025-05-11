@@ -116,7 +116,7 @@ export const QuizProvider = ({ children }: { children: ReactNode }) => {
     if (tiebreakQuestions[tieKey]) {
       setIsTiebreaking(true);
       setTiebreakQuestion(tieKey);
-      toast.info("We need a bit more information to determine your best path!");
+      toast.info("Precisamos de mais algumas informações para determinar seu melhor caminho!");
     } else {
       // Fallback tie-break logic - prioritize fullstack > backend > frontend
       const priorityOrder: PathCategory[] = ['fullstack', 'backend', 'frontend'];
@@ -180,7 +180,7 @@ export const QuizProvider = ({ children }: { children: ReactNode }) => {
 export const useQuiz = () => {
   const context = useContext(QuizContext);
   if (context === undefined) {
-    throw new Error("useQuiz must be used within a QuizProvider");
+    throw new Error("useQuiz deve ser usado dentro de um QuizProvider");
   }
   return context;
 };

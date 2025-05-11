@@ -13,7 +13,7 @@ export default function ProgressBar({ current, total, className }: ProgressBarPr
   return (
     <div className={cn("w-full", className)}>
       <div className="flex justify-between mb-1 text-xs">
-        <span className="text-muted-foreground">Question {current} of {total}</span>
+        <span className="text-muted-foreground">Pergunta {current} de {total}</span>
         <span className="text-muted-foreground">{Math.round(percentage)}%</span>
       </div>
       <div className="w-full h-2 bg-muted/40 rounded-full overflow-hidden">
